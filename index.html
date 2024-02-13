@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sutar Kost</title>
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./dist/output.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
-      integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    />
   </head>
 
   <body>
@@ -24,12 +25,12 @@
     <header class="header-mobile absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
       <div class="container">
         <div class="relative flex items-center justify-between">
-          <div class="lg:px-16 md:px-2 sm:px-0">
+          <div class="lg:px-16 md:px-8 sm:px-4">
             <a class="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0" href="#">
               <span class="font-bold text-dark">Sutar Kost</span>
             </a>
           </div>
-          <div class="flex items-center px-4">
+          <div class="flex items-center lg:py-0 sm:py-8">
             <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
               <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
               <span class="hamburger-line transition duration-300 ease-in-out"></span>
@@ -48,10 +49,7 @@
                   <a href="#facility" class="mx-8 flex py-2 text-base text-dark group-hover:text-green-600 dark:text-white">Facility</a>
                 </li>
                 <li class="group">
-                  <a href="#locations" class="mx-8 flex py-2 text-base text-dark group-hover:text-green-600 dark:text-white">Location</a>
-                </li>
-                <li class="group">
-                  <a href="#about" class="mx-8 flex py-2 text-base text-dark group-hover:text-green-600 dark:text-white">About</a>
+                  <a href="#location" class="mx-8 flex py-2 text-base text-dark group-hover:text-green-600 dark:text-white">Location</a>
                 </li>
                 <li class="group">
                   <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-green-600 dark:text-white">Contact</a>
@@ -64,15 +62,14 @@
     </header>
     <!-- Header End -->
 
-    <!-- feature section -->
-    <section class="bg-white md:py-24 xl:relative mt-10">
+    <!-- Home Section -->
+    <section class="md:py-24 xl:relative" id="home">
       <div class="container max-w-screen-xl mx-auto">
         <div class="flex flex-col xl:flex-row md:flex-row sm:flex-col justify-end">
-          <div class="px-16">
-            <img class="object-cover w-full" src="./assets/image/sutar_kost_yard.jpg" alt="Sutar Kost" />
+          <div class="p-12 lg:flex-1">
+            <img src="./assets/image/sutar_kost_yard.jpg" alt="Sutar Kost" class="rounded-xl shadow-xl sm:mt-6 sm:max-h-screen sm:w-full sm:object-cover sm:object-center" />
           </div>
-
-          <div class="">
+          <div class="xl:mt-16 md:mt-12 sm:mt-0">
             <h1 class="font-semibold text-gray-900 text-xl md:text-4xl text-center leading-normal mb-6">
               Choice of various types of <br />
               house
@@ -131,8 +128,8 @@
     </section>
     <!-- feature section //end -->
 
-    <!-- gallery section -->
-    <section class="bg-white py-10 md:py-16">
+    <!-- Gallery section -->
+    <section class="bg-white py-10 md:py-16" id="facility">
       <div class="container max-w-screen-xl mx-auto px-4">
         <h1 class="font-semibold text-gray-900 text-4xl text-center mb-10">Our Gallery</h1>
 
@@ -163,8 +160,25 @@
       </div>
       <!-- container.// -->
     </section>
-    <!-- gallery section //end -->
+    <!-- Gallery section //end -->
 
+    <!-- Map Location Section Start -->
+    <section id="location">
+      <h2 class="font-semibold text-gray-900 text-4xl text-center mb-3">Map Sutar Kost</h2>
+      <p class="text-center text-dark text-xl mb-5">Sutar Kost beralamat di Jl. Tukad Oos Barat No.5, Renon, Denpasar Selatan, Kota Denpasar, Bali 80226.</p>
+      <iframe
+        class="mx-auto mb-10 md:mb-16 rounded-lg shadow-xl"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.0818492730737!2d115.23867297510397!3d-8.68376658843156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24169c9e63493%3A0x7341bf944ae14c8a!2sSutar%20Kost!5e0!3m2!1sen!2sid!4v1707802212091!5m2!1sen!2sid"
+        width="800"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- Map Location Section Start -->
     <!-- testimoni section -->
     <section class="bg-white py-10 md:py-16">
       <div class="container max-w-screen-xl mx-auto px-4 xl:relative">
@@ -229,8 +243,8 @@
     </section>
     <!-- testimoni section //end -->
 
-    <!-- book section -->
-    <section class="bg-white py-10 md:py-16">
+    <!-- Contact Section -->
+    <section class="bg-white py-10 md:py-16" id="contact">
       <div class="container max-w-screen-xl mx-auto px-4 xl:relative">
         <div class="bg-green-800 flex flex-col lg:flex-row items-center justify-evenly py-14 rounded-3xl">
           <div class="text-center lg:text-left mb-10 lg:mb-0">
@@ -252,45 +266,23 @@
 
           <div class="hidden md:block bg-white xl:relative px-6 py-3 rounded-3xl">
             <div class="py-3">
-              <h3 class="font-semibold text-gray-900 text-3xl">Book a meeting</h3>
-            </div>
-
-            <div class="py-3">
-              <input type="text" placeholder="Full Name" class="px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none" />
-            </div>
-
-            <div class="py-3">
-              <input type="text" placeholder="Email" class="px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none" />
-            </div>
-
-            <div class="py-3 relative">
-              <input type="text" placeholder="Date" class="px-4 py-4 w-96 bg-gray-100 font-normal text-lg placeholder-gray-400 rounded-xl outline-none" />
-
-              <div class="absolute inset-y-0 left-80 ml-6 flex items-center text-xl text-gray-600">
-                <i data-feather="calendar"></i>
+              <h3 class="font-semibold text-gray-900 text-3xl">Contact Us</h3>
+              <!-- Phone Number and Operational Hour -->
+              <div class="flex items justify-center space-x-3">
+                <a href="#"><i class="fab fa-whatsapp text-green-500 text-2xl"></i></a>
+                <p class="font-normal text-gray-400 text-xl">+6281805688087</p>
               </div>
-            </div>
-
-            <div class="py-3 relative">
-              <input type="text" placeholder="Virtual Meeting" class="px-4 py-4 w-96 bg-gray-100 placeholder-gray-400 rounded-xl outline-none" />
-
-              <div class="absolute inset-y-0 left-80 ml-6 flex items-center text-xl text-gray-600">
-                <i data-feather="chevron-down"></i>
-              </div>
-            </div>
-
-            <div class="py-3">
-              <button class="w-full py-4 font-semibold text-lg text-white bg-green-700 rounded-xl hover:bg-green-900 transition ease-in-out duration-500">Booking</button>
             </div>
           </div>
         </div>
       </div>
       <!-- container.// -->
     </section>
+
     <!-- book section //end -->
 
     <!-- footer -->
-    <footer class="bg-white py-10 md:py-16">
+    <footer class="bg-white py-10 md:py-16 border-t-[1.5px] border-[#CCCCCC]">
       <div class="container max-w-screen-xl mx-auto px-4">
         <div class="flex flex-col lg:flex-row justify-between">
           <div class="text-center lg:text-left mb-10 lg:mb-0">
@@ -361,9 +353,6 @@
     </footer>
     <!-- footer //end -->
 
-    <script>
-      feather.replace();
-    </script>
-    <script src="dist/js/script.js"></script>
+    <script src="./dist/js/script.js"></script>
   </body>
 </html>
