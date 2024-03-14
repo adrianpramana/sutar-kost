@@ -25,10 +25,9 @@
     <header class="header-mobile absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
       <div class="container">
         <div class="relative flex items-center justify-between">
-          <div class="lg:px-4 md:px-2 sm:px-0">
-            <a class="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0" href="#">
-              <span class="font-bold text-dark">Sutar Kost</span>
-            </a>
+          <div class="lg:px-4 md:px-2 sm:px-0 flex items-center">
+            <img src="./assets/image/sutar-kost-logo.png" alt="Sutar Kost Logo" class="h-10 w-auto mr-4" />
+            <span class="font-bold text-dark">Sutar Kost</span>
           </div>
           <div class="flex items-center lg:py-0 sm:py-8">
             <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
@@ -63,92 +62,111 @@
     <!-- Header End -->
 
     <!-- Home Section -->
-    <section class="md:py-24 xl:relative" id="home">
-      <div class="container max-w-screen-xl mx-auto">
-        <div class="flex flex-col xl:flex-row md:flex-row sm:flex-col justify-end">
-          <div class="p-12 lg:flex-1">
-            <img src="./assets/image/sutar_kost_yard.jpg" alt="Sutar Kost" class="rounded-xl shadow-xl sm:mt-6 sm:max-h-screen sm:w-full sm:object-cover sm:object-center" />
+    <section class="py-16 md:py-24 lg:py-32 xl:relative" id="home">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex items-center justify-center">
+            <img src="./assets/image/sutar_kost_yard.jpg" alt="Sutar Kost" class="rounded-xl shadow-xl w-full object-cover md:h-auto lg:h-full" />
           </div>
-          <div class="xl:mt-16 md:mt-12 sm:mt-0">
-            <p class="font-semibold text-gray-900 xl:text-4xl lg:text-2xl md:text-xl sm:text-5xl text-center leading-normal p-5 text-balance">Choice of various types of house</p>
-
-            <p class="font-normal text-gray-400 text-xs md:text-xl text-center mb-16">
-              We provide a wide of selection of home types for you and your <br />
-              family and are free to choose a home model
-            </p>
-
-            <div class="flex flex-col md:flex-row justify-center xl:justify-start space-x-4 mb-20">
-              <div class="px-8 h-20 mx-auto md:mx-0 bg-gray-200 rounded-lg flex items-center justify-center mb-5 md:mb-0">
+          <div class="space-y-8">
+            <h1 class="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl text-center leading-tight">Choice of various types of house</h1>
+            <p class="text-gray-700 text-base md:text-lg leading-relaxed">We provide a wide selection of home types for you and your family. Feel free to choose a home model that suits your needs.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 gap-4">
+              <div class="flex items-center justify-center space-x-4 p-4 rounded-lg bg-white shadow-md max-w-sm mx-auto sm:max-w-none">
                 <i class="fas fa-home text-primary text-2xl"></i>
+                <div class="text-center">
+                  <h4 class="font-semibold text-gray-900 text-lg md:text-xl mb-2">Best Home Guarantee</h4>
+                  <p class="text-gray-700 text-sm md:text-base">We ensure the top quality of your new home purchased from D'house.</p>
+                </div>
               </div>
-
-              <div class="text-center md:text-left">
-                <h4 class="font-semibold text-gray-900 text-2xl mb-2">Best Home Guarantee</h4>
-                <p class="font-normal text-gray-400 text-xl leading-relaxed">
-                  We guarantees the quality of your home you bought <br />
-                  from D’house
-                </p>
-              </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row justify-center xl:justify-start space-x-4 mb-20">
-              <div class="px-8 h-20 mx-auto md:mx-0 bg-gray-200 rounded-lg flex items-center justify-center mb-5 md:mb-0">
+              <div class="flex items-center justify-center space-x-4 p-4 rounded-lg bg-white shadow-md max-w-sm mx-auto sm:max-w-none">
                 <i class="fas fa-money-bill text-primary text-2xl"></i>
+                <div class="text-center">
+                  <h4 class="font-semibold text-gray-900 text-lg md:text-xl mb-2">Secure Transactions</h4>
+                  <p class="text-gray-700 text-sm md:text-base">Enjoy complete confidentiality and attractive discounts on all your transactions with D'house.</p>
+                </div>
               </div>
-
-              <div class="text-center md:text-left">
-                <h4 class="font-semibold text-gray-900 text-2xl mb-2">Safe Transaction</h4>
-                <p class="font-normal text-gray-400 text-xl leading-relaxed">
-                  Your transactions will always be kept confidential <br />
-                  and will get discounted
-                </p>
-              </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row justify-center xl:justify-start space-x-4">
-              <div class="px-8 h-20 mx-auto md:mx-0 bg-gray-200 rounded-lg flex items-center justify-center mb-5 md:mb-0">
+              <div class="flex items-center justify-center space-x-4 p-4 rounded-lg bg-white shadow-md max-w-sm mx-auto sm:max-w-none">
                 <i class="fas fa-bed text-primary text-2xl"></i>
+                <div class="text-center">
+                  <h4 class="font-semibold text-gray-900 text-lg md:text-xl mb-2">Reduced Home Taxes</h4>
+                  <p class="text-gray-700 text-sm md:text-base">Benefit from lower tax rates when you purchase your home from D'house.</p>
+                </div>
               </div>
-
-              <div class="text-center md:text-left">
-                <h4 class="font-semibold text-gray-900 text-2xl mb-2">Low and Cost Home Taxes</h4>
-                <p class="font-normal text-gray-400 text-xl leading-relaxed">
-                  By buying a house from D’house, you will get a tax <br />
-                  discount
-                </p>
+              <div class="flex items-center justify-center space-x-4 p-4 rounded-lg bg-white shadow-md max-w-sm mx-auto sm:max-w-none">
+                <i class="fas fa-bed text-primary text-2xl"></i>
+                <div class="text-center">
+                  <h4 class="font-semibold text-gray-900 text-lg md:text-xl mb-2">Reduced Home Taxes</h4>
+                  <p class="text-gray-700 text-sm md:text-base">Benefit from lower tax rates when you purchase your home from D'house.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center space-x-4 p-4 rounded-lg bg-white shadow-md max-w-sm mx-auto sm:max-w-none">
+                <i class="fas fa-home text-primary text-2xl"></i>
+                <div class="text-center">
+                  <h4 class="font-semibold text-gray-900 text-lg md:text-xl mb-2">Best Home Guarantee</h4>
+                  <p class="text-gray-700 text-sm md:text-base">We ensure the top quality of your new home purchased from D'house.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center space-x-4 p-4 rounded-lg bg-white shadow-md max-w-sm mx-auto sm:max-w-none">
+                <i class="fas fa-money-bill text-primary text-2xl"></i>
+                <div class="text-center">
+                  <h4 class="font-semibold text-gray-900 text-lg md:text-xl mb-2">Secure Transactions</h4>
+                  <p class="text-gray-700 text-sm md:text-base">Enjoy complete confidentiality and attractive discounts on all your transactions with D'house.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center space-x-4 p-4 rounded-lg bg-white shadow-md max-w-sm mx-auto sm:max-w-none">
+                <i class="fas fa-home text-primary text-2xl"></i>
+                <div class="text-center">
+                  <h4 class="font-semibold text-gray-900 text-lg md:text-xl mb-2">Best Home Guarantee</h4>
+                  <p class="text-gray-700 text-sm md:text-base">We ensure the top quality of your new home purchased from D'house.</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center space-x-4 p-4 rounded-lg bg-white shadow-md max-w-sm mx-auto sm:max-w-none">
+                <i class="fas fa-money-bill text-primary text-2xl"></i>
+                <div class="text-center">
+                  <h4 class="font-semibold text-gray-900 text-lg md:text-xl mb-2">Secure Transactions</h4>
+                  <p class="text-gray-700 text-sm md:text-base">Enjoy complete confidentiality and attractive discounts on all your transactions with D'house.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- container.// -->
     </section>
+
     <!-- feature section //end -->
 
     <!-- Gallery section -->
     <section class="bg-white py-10" id="facility">
       <div class="container max-w-screen-xl mx-auto px-4">
-        <h1 class="font-semibold text-gray-900 text-4xl text-center mb-10">Facilities</h1>
-
-        <div class="flex space-x-5 md:space-x-6 lg:space-x-8">
-          <div>
-            <img src="assets/image/front-room.jpg" alt="image" class="mb-4 md:mb-6 lg:mb-8 hover:opacity-75 transition ease-in-out duration-500 rounded-lg" />
-            <img src="assets/image/sutar-kost-yard.jpg" alt="image" class="hover:opacity-75 transition ease-in-out duration-500 rounded-lg" />
-          </div>
-
-          <div>
-            <img src="assets/image/facilities.jpg" alt="image" class="mb-4 md:mb-6 lg:mb-8 hover:opacity-75 transition ease-in-out duration-500 rounded-lg" />
-            <img src="assets/image/front-side-room.jpg" alt="image" class="mb-3 md:mb-6 lg:mb-8 hover:opacity-75 transition ease-in-out duration-500 rounded-lg" />
-            <img src="assets/image/kitchen.jpg" alt="image" class="mb-4 md:mb-6 lg:mb-8 hover:opacity-75 transition ease-in-out duration-500 rounded-lg" />
-          </div>
-
-          <div>
-            <img src="assets/image/TV.jpg" alt="image" class="mb-4 md:mb-6 lg:mb-8 hover:opacity-75 transition ease-in-out duration-500 rounded-lg" />
-            <img src="assets/image/front-room.jpg" alt="image" class="hover:opacity-75 transition ease-in-out duration-500 rounded-lg" />
-          </div>
+        <h1 class="font-semibold text-gray-900 text-4xl text-center mb-10">Fasilitas</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+          <figure class="mb-4">
+            <img src="assets/image/sutar-kost-yard.jpg" alt="Halaman Kost" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
+            <figcaption class="text-center text-gray-700 text-xl font-bold">Halaman Kost</figcaption>
+          </figure>
+          <figure class="mb-4">
+            <img src="assets/image/facilities.jpg" alt="Fasilitas Umum" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
+            <figcaption class="text-center text-gray-700 text-xl font-bold">Fasilitas Umum</figcaption>
+          </figure>
+          <figure class="mb-4">
+            <img src="assets/image/front-side-room.jpg" alt="Kamar Depan Sisi" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
+            <figcaption class="text-center text-gray-700 text-xl font-bold">Kamar Sisi Depan</figcaption>
+          </figure>
+          <figure class="mb-4">
+            <img src="assets/image/kitchen.jpg" alt="Dapur" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
+            <figcaption class="text-center text-gray-700 text-xl font-bold">Dapur</figcaption>
+          </figure>
+          <figure class="mb-4">
+            <img src="assets/image/TV.jpg" alt="Ruang TV" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
+            <figcaption class="text-center text-gray-700 text-xl font-bold">Ruang TV</figcaption>
+          </figure>
+          <figure class="mb-4">
+            <img src="assets/image/front-room-sutar-kost.jpg" alt="Kamar Depan" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
+            <figcaption class="text-center text-gray-700 text-xl font-bold">Kamar Depan</figcaption>
+          </figure>
         </div>
       </div>
-      <!-- container.// -->
     </section>
     <!-- Gallery section //end -->
 
@@ -188,29 +206,27 @@
 
     <!-- Contact Section -->
     <section class="bg-white py-10 md:py-16" id="contact">
-      <div class="container max-w-screen-xl mx-auto px-4 xl:relative">
-        <div class="bg-green-800 flex flex-col lg:flex-row items-center justify-evenly py-14 rounded-3xl">
-          <div class="text-center lg:text-left mb-10 lg:mb-0">
-            <h1 class="font-semibold text-white text-4xl md:text-5xl lg:text-7xl leading-normal mb-4">
+      <div class="container mx-auto px-4 xl:relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="flex flex-col items-center justify-center space-y-8 text-center md:text-left">
+            <h1 class="font-semibold text-green-800 text-4xl md:text-5xl lg:text-7xl leading-normal mb-4">
               Talk to us <br />
-              to discuss
+              to discuss your needs
             </h1>
-
-            <p class="font-normal text-white text-md md:text-xl">
-              Need more time to discuss? Won’t worry, we are <br />
-              ready to help you. You can fill in the column on the <br />
-              right to book a meeting with us. Totally free.
+            <p class="font-normal text-gray-700 text-md md:text-xl">
+              Need more time? No worries, we're here to help! <br />
+              Fill out the form on the right to book a free meeting.
             </p>
           </div>
-
-          <div class="hidden xl:block xl:absolute right-0">
-            <img src="assets/image/book.png" alt="Image" />
+          <div class="flex items-center justify-center relative md:justify-end">
+            <img src="./assets/image/book.png" alt="Image" class="w-full md:w-auto max-h-96 object-cover rounded-lg shadow-md" />
+            <div class="absolute inset-0 bg-green-800/20 rounded-lg">
+              <img src="assets/image/gallery-4.png" alt="Image" class="object-cover w-full h-full rounded-lg" />
+            </div>
           </div>
-
-          <div class="bg-white xl:relative px-6 py-3 rounded-3xl">
+          <div class="bg-white px-6 py-3 rounded-3xl md:mt-8 contact-form">
             <div class="py-3">
               <h3 class="font-semibold text-gray-900 text-3xl text-center">Contact Us</h3>
-              <!-- Phone Number and Operational Hour -->
               <div class="flex items justify-center space-x-3">
                 <a href="#"><i class="fab fa-whatsapp text-green-500 text-2xl"></i></a>
                 <p class="font-normal text-gray-400 text-xl">+6281805688087</p>
@@ -219,81 +235,69 @@
           </div>
         </div>
       </div>
-      <!-- container.// -->
     </section>
 
-    <!-- book section //end -->
-
     <!-- footer -->
-    <footer class="bg-white py-10 md:py-16 border-t-[1.5px] border-[#CCCCCC]">
+    <footer class="bg-white py-10 md:py-16 border-t border-gray-300">
       <div class="container max-w-screen-xl mx-auto px-4">
         <div class="flex flex-col lg:flex-row justify-between">
           <div class="text-center lg:text-left mb-10 lg:mb-0">
-            <div class="flex justify-center lg:justify-start mb-5">
-              <img src="" alt="Sutar Kost Logo" />
+            <div class="flex justify-center lg:justify-center mb-3">
+              <img src="./assets/image/sutar-kost-logo.png" alt="Sutar Kost Logo" class="w-52" />
             </div>
-
-            <p class="font-light text-gray-400 text-xl mb-10">
-              Get your dream house with <br />
-              Sutar Kost
-            </p>
+            <p class="font-light text-gray-400 text-lg md:text-xl mb-6">Sutar Kost merupakan kost yang berlokasi di Renon, Denpasar, Bali.</p>
 
             <div class="flex items-center justify-center lg:justify-start space-x-5">
-              <a href="#" class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
-                <i data-feather="facebook"></i>
+              <a href="#" class="px-3 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
+                <i class="fab fa-whatsapp"></i>
               </a>
-
-              <a href="#" class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
-                <i data-feather="twitter"></i>
-              </a>
-
-              <a href="#" class="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
-                <i data-feather="linkedin"></i>
+              <a href="#" class="px-3 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-green-800 hover:text-white transition ease-in-out duration-500">
+                <i class="fas fa-envelope"></i>
               </a>
             </div>
           </div>
 
           <div class="text-center lg:text-left mb-10 lg:mb-0">
-            <h4 class="font-semibold text-gray-900 text-2xl mb-6">Sitemap</h4>
+            <h4 class="font-semibold text-gray-900 text-lg md:text-2xl mb-6">Sitemap</h4>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Home</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Home</a>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Features</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Features</a>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Gallery</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Gallery</a>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Testimoni</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Testimoni</a>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Book a meeting</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Book a meeting</a>
           </div>
 
           <div class="text-center lg:text-left mb-10 lg:mb-0">
-            <h4 class="font-semibold text-gray-900 text-2xl mb-6">Landing</h4>
+            <h4 class="font-semibold text-gray-900 text-lg md:text-2xl mb-6">Landing</h4>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Mobile App</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Mobile App</a>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Property</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Property</a>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Personal Website</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Personal Website</a>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Web Developer</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Web Developer</a>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Online Course</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Online Course</a>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Donation</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Donation</a>
           </div>
 
           <div class="text-center lg:text-left">
-            <h4 class="font-semibold text-gray-900 text-2xl mb-6">Utility</h4>
+            <h4 class="font-semibold text-gray-900 text-lg md:text-2xl mb-6">Utility</h4>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">FAQ</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">FAQ</a>
 
-            <a href="#" class="block font-light text-gray-400 text-xl mb-6 hover:text-gray-800 transition ease-in-out duration-300">Terms & Conditions</a>
+            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Terms & Conditions</a>
           </div>
         </div>
       </div>
-      <!-- container.// -->
     </footer>
+
     <!-- footer //end -->
 
     <script src="./dist/js/script.js"></script>

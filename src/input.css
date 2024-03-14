@@ -27,6 +27,13 @@ body {
   @apply -rotate-45;
 }
 
+.contact-section .image-container img {
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Optional: thin border */
+}
+.contact-section .contact-form {
+  padding: 4rem; /* adjust padding as desired */
+}
+
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
