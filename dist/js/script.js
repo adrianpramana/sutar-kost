@@ -31,8 +31,6 @@ window.addEventListener('click', function (e) {
         navMenu.classList.add('hidden');
     }
 });
-
-
 // DarkMode Toggle
 // const darkToggle = document.querySelector('#dark-toggle');
 // const html = document.querySelector('html');
