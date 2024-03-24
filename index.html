@@ -18,6 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -49,7 +51,7 @@
                   <a href="#facility" class="mx-8 flex py-2 text-base text-dark group-hover:text-green-600 dark:text-white">Facility</a>
                 </li>
                 <li class="group">
-                  <a href="#location" class="mx-8 flex py-2 text-base text-dark group-hover:text-green-600 dark:text-white">Location</a>
+                  <a href="#locations" class="mx-8 flex py-2 text-base text-dark group-hover:text-green-600 dark:text-white">Location</a>
                 </li>
                 <li class="group">
                   <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-green-600 dark:text-white">Contact</a>
@@ -71,29 +73,29 @@
           </div>
 
           <div class="space-y-8">
-            <h1 class="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl text-center leading-tight">Hunian Nyaman & Harga Terjangkau</h1>
-            <p class="text-gray-700 text-base md:text-lg leading-relaxed text-justify">
+            <h1 class="font-semibold text-gray-900 text-xl md:text-2xl lg:text-3xl text-center leading-tight" data-aos="fade-right">Hunian Nyaman & Harga Terjangkau</h1>
+            <p class="text-gray-700 text-base md:text-lg leading-relaxed text-justify" data-aos="fade-left" data-aos-delay="200">
               Sutar Kost menyediakan hunian nyaman dengan fasilitas lengkap dan harga terjangkau. Kost ini menerima sewa bulanan dan berlokasi strategis di dekat tempat pariwisata, pendidikan, dan berbagai fasilitas umum lainnya. Selain
-              itu, Sutar Kost memiliki total kamar sebanyak 7 kamar yang siap disewakan. Kost ini juga menyediakan fasilitas umum seperti dapur, ruang tamu, dan halaman yang luas.
-              <b>Terkait iuran sampah, air, sudah termasuk dalam biaya sewa bulanan. Terkecuali token listrik membayar masing-masing oleh calon penyewa.</b> Juga Sutar Kost juga menyediakan fasilitas free Wi-Fi dan TV yang bisa digunakan
-              langsung oleh penghuni kost. Adapun aturan yang berlaku di Sutar Kost adalah <b>tidak diperbolehkan membawa hewan peliharaan.</b>
+              itu, Sutar Kost memiliki total kamar sebanyak 7 kamar yang siap disewakan. Kost ini juga menyediakan fasilitas umum seperti dapur, kamar mandi, dsb.
+              <b>Terkait iuran sampah, air, sudah termasuk dalam biaya sewa bulanan. Terkecuali untuk token listrik dibayar masing-masing oleh calon penyewa.</b> Juga Sutar Kost juga menyediakan fasilitas free Wi-Fi dan TV yang bisa
+              digunakan langsung oleh penghuni kost. Adapun aturan yang berlaku di Sutar Kost adalah <b>tidak diperbolehkan membawa hewan peliharaan dan untuk calon penyewa khusus yang single saja atau tidak berpasangan.</b>
             </p>
 
-            <div class="flex items-center justify-center space-x-3">
-              <i class="fas fa-wifi text-green-500 text-2xl"></i>
-              <i class="fas fa-tv text-green-500 text-2xl"></i>
-              <i class="fas fa-utensils text-green-500 text-2xl"></i>
-              <i class="fas fa-shower text-green-500 text-2xl"></i>
-              <i class="fas fa-bed text-green-500 text-2xl"></i>
+            <div class="flex items-center justify-center space-x-3" data-aos="fade-left" data-aos-delay="200">
+              <i class="fas fa-wifi text-primary text-2xl"></i>
+              <i class="fas fa-tv text-primary text-2xl"></i>
+              <i class="fas fa-utensils text-primary text-2xl"></i>
+              <i class="fas fa-shower text-primary text-2xl"></i>
+              <i class="fas fa-bed text-primary text-2xl"></i>
             </div>
 
-            <div class="flex flex-wrap items-center justify-center space-x-3">
+            <div class="flex flex-wrap items-center justify-center space-x-3" data-aos="fade-left" data-aos-delay="200">
               <div class="flex items-center justify-center space-x-3">
                 <p class="font-semibold text-gray-900 text-lg sm:text-base">Mulai dari</p>
-                <p class="font-semibold text-green-500 text-lg sm:text-base">Rp. 1.900.000</p>
+                <p class="font-semibold text-primary text-lg sm:text-base">Rp. 1.900.000</p>
                 <p class="font-semibold text-gray-900 text-lg sm:text-base">/bulan</p>
               </div>
-              <a href="#" class="px-6 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition ease-in-out duration-500">Book Now</a>
+              <a href="#contact" class="px-6 py-2 bg-primary text-white rounded-full text-center font-bold hover:bg-green-600 transition ease-in-out duration-500 w-full sm:w-1/2">Book Now</a>
             </div>
           </div>
         </div>
@@ -103,33 +105,33 @@
     <!-- feature section //end -->
 
     <!-- Gallery section -->
-    <section class="bg-white py-10" id="facility">
+    <section class="bg-slate-50 py-10" id="facility">
       <div class="container max-w-screen-xl mx-auto px-4">
-        <h1 class="font-semibold text-gray-900 text-4xl text-center mb-10">Fasilitas</h1>
+        <h1 class="font-semibold text-gray-900 text-4xl text-center mb-10">Facilities</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
-          <figure class="mb-4">
+          <figure class="mb-4" data-aos="zoom-in">
             <img src="assets/image/sutar_kost_yard.jpg" alt="Halaman Kost" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
-            <figcaption class="text-center text-gray-700 text-xl font-bold">Halaman Kost</figcaption>
+            <figcaption class="text-center text-gray-700 text-xl font-bold py-2">Halaman Kost</figcaption>
           </figure>
-          <figure class="mb-4">
-            <img src="assets/image/facilities.jpg" alt="Fasilitas Bed" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
-            <figcaption class="text-center text-gray-700 text-xl font-bold">Fasilitas Bed</figcaption>
+          <figure class="mb-4" data-aos="zoom-in">
+            <img src="assets/image/facilities.jpg" alt="Bed" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
+            <figcaption class="text-center text-gray-700 text-xl font-bold py-2">Bed</figcaption>
           </figure>
-          <figure class="mb-4">
+          <figure class="mb-4" data-aos="zoom-in">
             <img src="assets/image/front-side-room.jpg" alt="Kamar Depan Sisi" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
-            <figcaption class="text-center text-gray-700 text-xl font-bold">Kamar Sisi Depan</figcaption>
+            <figcaption class="text-center text-gray-700 text-xl font-bold py-2">Kamar Sisi Depan</figcaption>
           </figure>
-          <figure class="mb-4">
+          <figure class="mb-4" data-aos="zoom-in">
             <img src="assets/image/kitchen.jpg" alt="Dapur" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
-            <figcaption class="text-center text-gray-700 text-xl font-bold">Dapur</figcaption>
+            <figcaption class="text-center text-gray-700 text-xl font-bold py-2">Dapur</figcaption>
           </figure>
-          <figure class="mb-4">
-            <img src="assets/image/TV.jpg" alt="Ruang TV" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
-            <figcaption class="text-center text-gray-700 text-xl font-bold">Ruang TV</figcaption>
+          <figure class="mb-4" data-aos="zoom-in">
+            <img src="assets/image/TV.jpg" alt="TV" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
+            <figcaption class="text-center text-gray-700 text-xl font-bold py-2">TV</figcaption>
           </figure>
-          <figure class="mb-4">
+          <figure class="mb-4" data-aos="zoom-in">
             <img src="assets/image/front-room-sutar-kost.jpg" alt="Kamar Depan" class="rounded-lg hover:opacity-75 transition ease-in-out duration-500" />
-            <figcaption class="text-center text-gray-700 text-xl font-bold">Kamar Depan</figcaption>
+            <figcaption class="text-center text-gray-700 text-xl font-bold py-2">Kamar Depan</figcaption>
           </figure>
         </div>
       </div>
@@ -137,11 +139,11 @@
     <!-- Gallery section //end -->
 
     <!-- Map Location Section Start -->
-    <section id="location" class="pt-16">
+    <section id="locations" class="pt-16">
       <div class="container xl:relative">
         <div class="w-full px-4">
           <div class="mx-auto">
-            <h2 class="font-semibold text-gray-900 text-4xl text-center mb-2">Map Sutar Kost</h2>
+            <h2 class="font-semibold text-gray-900 text-4xl text-center mb-2">Sutar Kost Address</h2>
             <p class="text-center text-dark text-xl">Jl. Tukad Oos Barat No.5, Renon, Denpasar Selatan, Kota Denpasar, Bali 80226.</p>
           </div>
         </div>
@@ -171,22 +173,22 @@
     <!-- Map Location Section Start -->
 
     <!-- Contact Section -->
-    <section class="py-10 md:py-16" id="contact">
+    <section class="bg-slate-50 py-10 md:py-16" id="contact">
       <div class="container mx-auto px-4">
         <div class="grid items-center">
-          <div class="text-center md:text-left mx-auto">
-            <h1 class="font-semibold text-green-800 text-4xl md:text-5xl lg:text-7xl leading-normal mb-4">Segera sewa di Sutar Kost dan nikmati fasilitas lengkap</h1>
-            <p class="font-normal text-gray-700 text-md md:text-xl leading-normal mb-8">Informasi lebih lanjut perihal pengecekan kamar dsb silakan hubungi kami melalui nomor telepon atau email yang tersedia di bawah.</p>
+          <div class="text-center md:text-left mx-auto" data-aos="fade-right" data-aos-delay="300">
+            <h1 class="font-semibold text-gray-900 text-4xl mb-5 text-center">Contact Us</h1>
+            <h3 class="font-semibold text-green-800 text-3xl md:text-xl lg:text-3xl leading-normal mb-4">Segera sewa di Sutar Kost dan nikmati fasilitas lengkap!</h3>
+            <p class="font-normal text-gray-700 text-md md:text-xl leading-normal mb-8">Informasi lebih lanjut perihal pengecekan kamar dll silakan hubungi kami melalui nomor telepon atau email yang tersedia di bawah.</p>
 
-            <h3 class="font-semibold text-gray-900 text-3xl mb-4 text-center">Contact Us</h3>
-            <div class="p-4 bg-gray-50 rounded-lg mx-auto mb-8 max-w-md">
+            <div class="p-4 bg-white rounded-lg mx-auto mb-8 max-w-md">
               <div class="flex flex-wrap items-center justify-center gap-4">
-                <a href="#" class="hover:text-green-500">
-                  <i class="fab fa-whatsapp text-gray-400 text-xl"></i>
+                <a aria-label="Chat on WhatsApp" href="https://wa.me/+6281805688087" class="hover:text-primary">
+                  <i class="fab fa-whatsapp text-dark text-xl"></i>
                   <span class="ml-2">+628180568808</span>
                 </a>
-                <a href="mailto:sutarkost@gmail.com" class="hover:text-green-500">
-                  <i class="fas fa-envelope text-gray-400 text-xl"></i>
+                <a href="mailto:sutarkost@gmail.com" class="hover:text-primary">
+                  <i class="fas fa-envelope text-dark text-xl"></i>
                   <span class="ml-2">sutarkost@gmail.com</span>
                 </a>
               </div>
@@ -197,64 +199,73 @@
     </section>
 
     <!-- Go to Top Button  -->
-    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-green-900 p-4 hover:animate-pulse" id="to-top">
       <i class="fas fa-arrow-up text-white text-xl"></i>
     </a>
 
     <!-- footer -->
-    <footer class="bg-white py-10 md:py-16 border-t border-gray-300">
-      <div class="container max-w-screen-xl mx-auto px-4">
-        <div class="flex flex-col lg:flex-row justify-between">
-          <div class="text-center lg:text-left mb-10 lg:mb-0">
-            <div class="flex justify-center lg:justify-center">
-              <img src="./assets/image/sutar-kost-logo.png" alt="Sutar Kost Logo" class="w-52" />
-            </div>
-            <p class="font-light text-gray-400 text-lg md:text-xl">Sutar Kost Menyediakan Fasilitas yang Lengkap</p>
+    <footer class="bg-primary pt-24 pb-12">
+      <div class="container text-center sm:flex sm:justify-center">
+        <div class="mb-12 w-full px-4 font-medium text-white md:w-1/3">
+          <h1 class="mb-3 text-4xl font-bold text-center sm:text-left">Sutar Kost</h1>
+          <img src="assets/image/sutar-kost-logo.png" alt="Sutar Kost Logo" class="h-32 rounded-full bg-white mb-3 mx-auto sm:mx-0" />
+          <h3 class="mb-2 text-2xl font-bold text-center sm:text-left">Contact Us</h3>
+          <div class="flex items-start justify-center sm:justify-start space-x-4">
+            <i class="fas fa-envelope"></i>
+            <p>sutar.kost@gmail.com</p>
           </div>
-
-          <div class="text-center lg:text-left mb-10 lg:mb-0">
-            <h4 class="font-semibold text-gray-900 text-lg md:text-2xl mb-6">Sitemap</h4>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Home</a>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Features</a>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Gallery</a>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Testimoni</a>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Book a meeting</a>
+          <div class="flex items-start justify-center sm:justify-start">
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/+6281805688087" class="hover:text-dark space-x-4">
+              <i class="fab fa-whatsapp text-white text-xl"></i>
+              <span>+628180568808</span>
+            </a>
           </div>
-
-          <div class="text-center lg:text-left mb-10 lg:mb-0">
-            <h4 class="font-semibold text-gray-900 text-lg md:text-2xl mb-6">Landing</h4>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Mobile App</a>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Property</a>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Personal Website</a>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Web Developer</a>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Online Course</a>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Donation</a>
-          </div>
-
-          <div class="text-center lg:text-left">
-            <h4 class="font-semibold text-gray-900 text-lg md:text-2xl mb-6">Utility</h4>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">FAQ</a>
-
-            <a href="#" class="block font-light text-gray-400 text-lg md:text-xl mb-3 md:mb-6 hover:text-gray-800 transition ease-in-out duration-300">Terms & Conditions</a>
+          <div class="flex items-start justify-center sm:justify-start space-x-0">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Jl. Tukad Oos Barat No.5, Renon, Denpasar Selatan, Kota Denpasar, Bali 80226.</p>
           </div>
         </div>
+        <div class="mb-12 w-full px-4 md:w-1/3">
+          <h3 class="mb-5 text-xl font-semibold text-white">Category</h3>
+          <ul class="text-white">
+            <li>
+              <a href="#facility" class="mb-3 inline-block text-base hover:text-primary">Facility</a>
+            </li>
+            <li>
+              <a href="#contact" class="mb-3 inline-block text-base hover:text-primary">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mb-12 w-full px-4 md:w-1/3">
+          <h3 class="mb-5 text-xl font-semibold text-white">Link</h3>
+          <ul class="text-white">
+            <li>
+              <a href="#home" class="mb-3 inline-block text-base hover:text-primary">Home</a>
+            </li>
+            <li>
+              <a href="#locations" class="mb-3 inline-block text-base hover:text-primary">Location</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="w-full border-t border-white pt-10">
+        <p class="text-center text-xs font-medium text-white">
+          Created with <span class="text-pink-500">❤</span> by <a href="https://www.instagram.com/adrianpramanaa_" class="font-bold text-white" target="_blank">I Made Adrian Astalina Pramana</a>, using
+          <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500"> Tailwind CSS</a>.
+        </p>
       </div>
     </footer>
 
     <!-- footer //end -->
-
+    <!-- JavaScript -->
     <script src="./dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
   </body>
 </html>
